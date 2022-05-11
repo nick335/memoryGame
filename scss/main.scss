@@ -1,0 +1,45 @@
+@import 'config';
+
+
+main{
+  overflow: hidden;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // float: left;
+  .image-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    .subdiv{
+      background: darkgreen;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 0.5rem;
+      margin-right: 0.5rem;
+
+      .img{
+        opacity: 0;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-right: 0;
+        margin-left: 0;
+        cursor: pointer;
+        
+        &.active{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+section{
+  margin-top:2rem;
+}

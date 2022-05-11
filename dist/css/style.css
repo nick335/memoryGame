@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  overflow: hidden;
+  margin: 1rem;
+  float: left;
+}
+
+main .image-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+}
+
+main .image-div .subdiv {
+  background: darkgreen;
+  width: 180px;
+  height: 200px;
+}
+
+main .image-div .subdiv .img {
+  opacity: 0;
+  width: 180px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 0;
+  margin-left: 0;
+  cursor: pointer;
+}
+main .image-div .subdiv .img.active {
+  opacity: 1;
+}

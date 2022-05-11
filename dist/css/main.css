@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  overflow: hidden;
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .image-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .image-div .subdiv {
+  background: darkgreen;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+main .image-div .subdiv .img {
+  opacity: 0;
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 0;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+main .image-div .subdiv .img.active {
+  opacity: 1;
+}
+
+section {
+  margin-top: 2rem;
+}
+/*# sourceMappingURL=main.css.map */
